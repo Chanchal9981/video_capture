@@ -1,6 +1,6 @@
 #get a frame per second
 import cv2
-path=r"C:\\Users\\patid\\Downloads\\new_mycemData_1_to_34\\ch01_00000000000000000.mp4"
+path=r"C:\\Users\\patid\\Downloads\\ch01_00000000000000000.mp4"
 os.mkdir("vedio_to_image7")
 cap = cv2.VideoCapture(path)
 img_count=1
@@ -79,8 +79,8 @@ def extractFrames(m,n):
         print('finished processing video {0} with frames {1}'.format(vid_files[v_f], count))
     return output # indent this less
 
-x=("C:\\Users\\patid\\Downloads\\new_mycem_data\\*.mp4")
-y=("C:\\Users\\patid\\Downloads\\new_mycem_data\\new_data")
+x=("C:\\Users\\patid\\Downloads\\*.mp4")
+y=("C:\\Users\\patid\\Downloads\\new_data")
 
 z=extractFrames(x,y)
 
