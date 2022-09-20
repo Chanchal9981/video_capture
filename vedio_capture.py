@@ -40,11 +40,13 @@ import glob
 from glob import glob
 import os
 import shutil
+import random
 def extractFrames(m,n):
     if not os.path.exists:
         os.makedirs(n)
     vid_files=glob(m)
     print(vid_files)
+    random_name = ['23','r34','4e','sa','sf5','sdf2','awd','hfg','c5g','sfg','sef4','kj','vp','chmbt','rey','lil','fghgh','neo','34f']
 
     for v_f in range(len(vid_files)):
         v1=os.path.basename(vid_files[v_f])
@@ -65,7 +67,7 @@ def extractFrames(m,n):
         count=0
 
         while success:
-            img_name = vid_name + '_f' + str(count) + ".jpg"
+            img_name = vid_name + random.choice(random_name) + str(count) + ".jpg"
             image_path = output + "/" + img_name
             frameId = int(round(vidcap.get(1)))
             success,image = vidcap.read()
