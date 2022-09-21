@@ -67,7 +67,7 @@ def extractFrames(m,n):
         count=0
 
         while success:
-            img_name = vid_name + random.choice(random_name) + str(count) + ".jpg"
+            img_name = f"{vid_name}{random.choice(random_name)}{str(count)}" + ".jpg"
             image_path = output + "/" + img_name
             frameId = int(round(vidcap.get(1)))
             success,image = vidcap.read()
