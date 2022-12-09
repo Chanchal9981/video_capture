@@ -11,8 +11,8 @@ aug = A.Compose([
     A.Transpose(p=0.5)
     ]) 
 
-img_dir = "/home/frinks1/rishabh_backup/final_coffee_data/new_images"
-mask_dir = "/home/frinks1/rishabh_backup/final_coffee_data/changed_masks_result" 
+img_dir = "./new_images"
+mask_dir = "./changed_masks_result" 
 img_names = os.listdir(img_dir) 
 max_imgs =800 
 count = 0
